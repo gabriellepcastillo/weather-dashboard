@@ -8,4 +8,4 @@ This web application is used to look at the weather forcast for 5 days in a city
 
 ## Submition 
 * URL:
-* Git Repo URL: 
+* Git Repo URL: https://github.com/gabriellepcastillo/weather-dashboard.git 
