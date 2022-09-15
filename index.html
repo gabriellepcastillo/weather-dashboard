@@ -11,7 +11,7 @@
 
 <body>
     <header class="hero">
-        <h1 class="title"> Weather Dashboard </h1>
+        <h1 class="title"> Weather Dashboard </i></h1>
     </header>
 
   <main class="flex-row justify-space-between">
@@ -20,23 +20,38 @@
             <h3 class="card-header text-uppercase">Search For A City</h3>
             <form id="user-form" class="card-body">
                 <label class="form-label" for="username">City</label>
-                <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+                <input id="userInput" type="text" autofocus="true" class="form-input" />
                 <button type="submit" class="btn">Search</button>
             </form>
         </div>
     </div>
+    <div class="currentWeather"></div>
+    <div class="dailyForcast"></div>
+    
+    <div class="card-option">
+        <h3 class="card-title text-uppercase">Recommend Cities</h3>
+        <div id="city-buttons" class="card-btn">
+            <button type="button" data-language="austin" class="austin">Austin</button>
+            <button type="button" data-language="chicago" class="chicago">Chicago</button>
+            <button type="button" data-language="orlando" class="orlando">Orlando</button>
+            <button type="button" data-language="seattle" class="seattle">Seattle</button>
+            <button type="button" data-language="denver" class="denver">Denver</button>
+            <button type="button" data-language="atlanta" class="atlanta">Atlanta</button>
+        </div>
+    </div>
     <div class="col-12 col-md-8">
         <h2 class="subtitle">Showing Weather for: <span id="repo-search-term"></span></h2>
+        <!-- put this inside display weather function/>>>>>$(#repo-search-term).html(data)-->
         <div id="repos-container" class="list-group">
-
+            <div id="forcast" class="weatherDisplay">
+                <h3 class="forcast-title text-uppercase">Forcast</h3>
+            </div>
+            <!--make some more empty elements to append data-->
         </div>
     </div>
 
-
     </main>
 
+<script src="./script.js"></script>
 </body>
-
-
-
 </html>
